@@ -15,7 +15,7 @@ tokenizer = T5Tokenizer.from_pretrained("./saved_summary_model")
 # device
 if torch.backends.mps.is_available():
     device = torch.device("mps")
-elif torch.cuda.is_availanle():
+elif torch.cuda.is_available():
     device = torch.device("cuda")
 else:
     device = torch.device("cpu")
